@@ -2,9 +2,6 @@ package com.hendisantika.spring.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import com.hendisantika.spring.boot.service.StudentService;
 
 @SpringBootApplication
 public class StudentSearchApplication {
@@ -21,8 +18,5 @@ public class StudentSearchApplication {
 	 * of beans contained within each. Here we create the bean in Main class
 	 * just for simplicity
 	 */
-	@Bean
-	public StudentService studentService() {
-		return new StudentService();
-	}
+
 }
